@@ -1,0 +1,73 @@
+.registerContainer {
+
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2E4057;
+
+    .left {
+        flex: 8;
+        background-color: #6FC1FF;
+        padding: 40px;
+
+        &img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+    }
+    .right {
+        flex: 4;
+        background-color: #2E4057;
+        display: flex;
+        flex-direction: column;
+        margin: auto 20px;
+        gap: 20px;
+
+        & h1 {
+            color: white;
+        }
+        & h5 {
+            color: rgb(166, 161, 161);
+        }
+
+        & form {
+            & input {
+                border: none;
+                border-bottom: 1px solid grey;
+                outline: none;
+                padding: 4px;
+                font-size: 1rem;
+                background-color: transparent;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                color: #d7d7d7;
+            }
+
+            & input::placeholder {
+                color: #d7d7d7;
+            }
+
+            & button{
+
+                margin: 20px 0;
+                padding: 8px;
+                border: none;
+                transition: all .4s ease-in-out;
+
+                &:hover{
+                    background-color: #2E4057;
+                    color: white;
+                }
+            }
+        }
+        & p{
+            & a{
+                color: #d7d7d7;
+            }
+        }
+
+    }
+}

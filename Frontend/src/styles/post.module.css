@@ -1,0 +1,70 @@
+.addPostContainer {
+    padding: 4px 10px;
+
+    & h1 {
+        margin-bottom: 20px;
+    }
+    .addPostBody {
+
+        display: flex;
+
+        .addImage {
+
+            flex: 6;
+            & > img {
+                width: 300px;
+                border: solid 1px grey;
+                height: 300px;
+                object-fit: contain;
+            }
+        }
+
+        & > form {
+            flex: 6;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+ 
+            & textarea {
+                border: none;
+                border-bottom: 1px solid grey;
+                outline: none;
+                padding: 2px;
+                width: 80%;
+                font-size: 1rem;
+            }
+            & > button {
+                width: 80%;
+                height: 40px;
+                background-color: #2E4057;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover{
+                    background-color: #2d4373;
+                }
+                
+            }
+        }
+    }
+
+}
+
+.myPostContainer{
+    padding:4px 10px;
+
+    & h1{
+margin: 20px 0;
+    }
+
+    .myPostBody{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,347 @@
+.topBarContainer {
+    background-color: #D1603D ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 20px;
+    align-items: center;
+    height: 50px;
+
+    .left {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .center {
+
+        & > div {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        & input {
+            width: 400px;
+            outline: none;
+            border-radius: 12px;
+            border: none;
+            padding: 6px;
+            font-size: 1rem;
+
+        }
+        & svg {
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        font-size: 1rem;
+
+        .links {
+            display: flex;
+            gap: 20px;
+            & > a {
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+        }
+
+        .icons {
+            display: flex;
+            gap: 20px;
+
+            & svg {
+
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+        }
+
+        & > img {
+            border-radius: 20px;
+            cursor: pointer;
+            object-fit: cover;
+
+        }
+    }
+}
+
+/* Side bar */
+.sideBarContainer {
+    /* flex: 3; */
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+
+    .wrapper {
+        padding: 20px;
+
+        .itemList {
+            & > li {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        & > button {
+            width: 150px;
+            height: 40px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: 0.3s all ease-in-out;
+            &:hover {
+                background-color: gainsboro;
+            }
+
+        }
+        .friendList {
+            & > li {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 20px;
+
+                & > img {
+                    border-radius: 20px;
+                    cursor: pointer;
+                    object-fit: cover;
+
+                }
+            }
+        }
+
+    }
+}
+
+/* feed */
+.feedContainer {
+    flex: 5.5;
+    height: calc(100vh - 70px);
+
+    .wrapper {
+        padding: 20px;
+
+    }
+}
+
+/* share */
+
+.shareContainer {
+    width: 100%;
+    height: 170px;
+    border-radius: 12px;
+    background-color: rgba(188, 188, 188, 0);
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
+
+    .wrapper {
+        padding: 10px;
+
+        .shareTop {
+
+            display: flex;
+            align-items: center;
+
+            & > img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 20px;
+                border: solid 1px black;
+            }
+            & > input {
+                border: none;
+                outline: none;
+                width: 80%;
+                height: 30px;
+                padding: 4px;
+            }
+        }
+
+        & > hr {
+            margin: 20px 0;
+
+        }
+        .shareBottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .shareOptions {
+                display: flex;
+
+                .shareOption {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 15px;
+                    gap: 2px;
+                    cursor: pointer;
+
+                    & > svg {
+                        font-size: 1.2rem;
+                    }
+
+                    & > span {
+                        font-size: 1rem;
+                    }
+                }
+
+            }
+
+            & > button {
+                border: none;
+                background-color: #0075A2;
+                padding: 7px;
+                border-radius: 6px;
+                font-weight: 500;
+                color: whitesmoke;
+            }
+
+        }
+    }
+
+}
+
+/* Post - css */
+
+.postContainer {
+
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 12px;
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
+
+    .wrapper {
+        padding: 10px;
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .topLeft {
+                display: flex;
+                align-items: center;
+
+                & > img {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .username {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    margin: 0 10px;
+                }
+
+                .createdAt {
+                    font-size: 0.8rem;
+
+                }
+            }
+            .topRight {
+
+                & > svg {
+                    font-size: 1.5rem;
+                }
+
+            }
+        }
+
+        .center {
+            margin: 20px 0;
+
+            .text {
+                font-size: 1rem;
+
+            }
+
+            & > img {
+                width: 100%;
+                max-height: 500px;
+                margin-top: 10px;
+                object-fit: contain;
+            }
+
+        }
+
+        .bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1rem;
+            font-weight: 500;
+
+        }
+
+    }
+}
+
+/* right bar */
+.rightBarContainer {
+    flex: 3.5;
+    background-color: rgb(223, 137, 137);
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+
+    .wrapper {
+        padding: 20px;
+
+        .birthday {
+
+            display: flex;
+            align-items: start;
+            gap: 3px;
+            & > img {
+                width: 60px;
+                height: 60px;
+            }
+
+            & > span {
+                font-weight: 300;
+                font-size: 1rem;
+            }
+        }
+
+        .advertisment {
+            width: 200px;
+            padding: 20px 0;
+        }
+
+    }
+}
+
+.FriendListContainer {
+
+    & > h3{
+        margin: 20px 0;
+    }
+
+    .content {
+        & ul {
+            & > li {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 20px;
+
+                & > img {
+                    border-radius: 20px;
+                    cursor: pointer;
+                    object-fit: cover;
+
+                }
+            }
+        }
+    }
+
+
+}

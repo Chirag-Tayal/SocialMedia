@@ -1,0 +1,122 @@
+.discussionContainer {
+    display: flex;
+    padding: 4px 10px;
+
+    .discussionForm {
+        flex: 8;
+
+        & h1 {
+            margin-bottom: 20px;
+        }
+        & form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 80%;
+
+            & input {
+                border: none;
+                border-bottom: 1px solid grey;
+                outline: none;
+                padding: 2px;
+                font-size: 1rem;
+            }
+
+            & textarea {
+                border: none;
+                border-bottom: 1px solid grey;
+                outline: none;
+                padding: 2px;
+                font-size: 1rem;
+            }
+            & > button {
+                height: 40px;
+                background-color: #2E4057;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                &:hover {
+                    background-color: #2d4373;
+                }
+
+            }
+        }
+    }
+
+    .discussionList {
+        flex: 4; 
+        & div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+.singleDiscussionContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 10px;
+
+    
+    .discussionOutput{ 
+        & h2{
+            margin: 10px 0;
+        }
+    }
+    
+    .replyContainer{
+        & h2{
+            margin: 20px 0;
+           }
+
+           .replyItem{
+            display: flex;
+            justify-content: space-between;
+           }
+            
+    }
+    .replyForm{
+       & h2{
+        margin: 20px 0;
+       }
+        
+        & form{
+            flex: 6;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+ 
+            & textarea {
+                border: none;
+                border-bottom: 1px solid grey;
+                outline: none;
+                padding: 2px;
+                width: 40%;
+                font-size: 1rem;
+            }
+            & > button {
+                width: 40%;
+                height: 40px;
+                background-color: #2E4057;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover{
+                    background-color: #2d4373;
+                }
+                
+            }
+        }
+    }
+}
